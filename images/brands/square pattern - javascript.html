@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.tutorialstonight.com/editor.php?p=js&q=square-pattern -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>square pattern - javascript</title>
+  <meta property="og:title" content="Online HTML Editor - TutorialsTonight">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@tutorialstoni8">
+  <meta property="og:site_name" content="@tutorialstonight">
+  <meta name="description" content="TutorialsTonight&#39;s Code editor for HTML, CSS and JavaScript. Edit code, create programs and learn.">
+  <meta property="og:description" content="TutorialsTonight&#39;s Code editor for HTML, CSS and JavaScript. Edit code, create programs and learn.">
+  <meta property="og:url" content="https://www.tutorialstonight.com/editor.php">
+  <link rel="canonical" href="https://www.tutorialstonight.com/editor.php">
+  <link rel="stylesheet" href="./square pattern - javascript_files/editor.min.css">
+  <link rel="stylesheet" href="./square pattern - javascript_files/codemirror5-13-4.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="">
+  <link rel="icon" type="image/jpg" href="https://www.tutorialstonight.com/assets/logo.svg">
+  <link rel="stylesheet" href="./square pattern - javascript_files/all.min.css">
+</head>
+
+<body onload="getCode()">
+  <div class="header">
+    <div class="logo">
+      <a href="https://www.tutorialstonight.com/"><img src="./square pattern - javascript_files/logo-name.svg" alt=""></a>
+      <h1>Online HTML Editor</h1>
+    </div>
+    <div class="header-social">
+      <span>Follow Us</span>
+      <a href="https://www.facebook.com/tutorialstonight" target="_blank" class="fab fa-facebook" rel="noopener noreferrer nofollow"></a>
+      <a href="https://twitter.com/tutorialstoni8" target="_blank" class="fab fa-twitter" rel="noopener noreferrer nofollow"></a>
+    </div>
+  </div>
+
+  <!-- Control Panel -->
+  <div class="controls-tab">
+    <div class="controls-1">
+      <div class="file-name">index.html</div>
+      <div class="settings">
+        <i id="editorTheme" class="fas fa-adjust" onclick="changeTheme()" title="Toggle Theme"></i>
+        <i class="fas fa-copy copy" onclick="copyToClipboard(this)"></i>
+        <button onclick="run()" id="run-button" class="run-button" title="Run The Code">Run</button>
+      </div>
+    </div>
+    <div class="controls-2">
+      <div class="output-text">Output</div>
+      <div class="resolution" id="resolution">Resolution: 715 × 663</div>
+    </div>
+  </div>
+  <!-- Editor Tabs and Output -->
+  <div class="main-container">
+    <div id="first">
+      <div class="editor-panel">
+        <div id="editor"><div class="CodeMirror cm-s-default CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 327px; left: 91.7969px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="display: block; right: 0px; left: 30px; height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 701px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: 0px; border-right-width: 30px; min-height: 445px; min-width: 700.625px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 61.7969px; top: 323px; height: 19px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">"en"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">"UTF-8"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">"viewport"</span> <span class="cm-attribute">content</span>=<span class="cm-string">"width=device-width, initial-scale=1.0"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>square pattern - javascript<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>Square pattern in javascript<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    <span class="cm-keyword">let</span> <span class="cm-def">n</span> <span class="cm-operator">=</span> <span class="cm-number">5</span>; <span class="cm-comment">// you can take input from prompt</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    <span class="cm-keyword">let</span> <span class="cm-def">string</span> <span class="cm-operator">=</span> <span class="cm-string">""</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    <span class="cm-keyword">for</span> (<span class="cm-keyword">let</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>; <span class="cm-variable">i</span> <span class="cm-operator">&lt;=</span> <span class="cm-variable">n</span>; <span class="cm-variable">i</span><span class="cm-operator">++</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">      <span class="cm-keyword">for</span> (<span class="cm-keyword">let</span> <span class="cm-def">j</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>; <span class="cm-variable">j</span> <span class="cm-operator">&lt;=</span> <span class="cm-variable">i</span>; <span class="cm-variable">j</span><span class="cm-operator">++</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">      <span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-variable">string</span> <span class="cm-operator">+=</span> <span class="cm-string">"*"</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">      }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">      </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    <span class="cm-variable">document</span>.<span class="cm-property">write</span>(<span class="cm-variable">string</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 445px;"></div><div class="CodeMirror-gutters" style="height: 475px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></div>
+      </div>
+    </div>
+    <div id="shield"></div>
+    <div id="separator"></div>
+    <div class="mobile-run-control">
+      <button class="mob-run-button" title="Run The Code" onclick="run()">Run</button>
+    </div>
+    <div id="second">
+      
+    <iframe id="output" class="output" src="./square pattern - javascript_files/saved_resource.html"></iframe></div>
+  </div>
+  
+  <script type="text/javascript" async="" src="./square pattern - javascript_files/analytics.js"></script><script src="./square pattern - javascript_files/codemirror5-13-4.min.js"></script>
+  <script>function toogleDisplay(e) {
+  e.nextElementSibling.classList.toggle('show-list');
+}
+var code;
+
+function getCode() {
+  const params = new URLSearchParams(window.location.search);
+  const p = params.get("p");
+  const q = params.get('q');
+  if (p == null) {
+    code = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML code editor</title>
+  <style>
+    body { background: #eeeeee }
+    h2 {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h2>Hello world!</h2>
+
+  <script>
+    alert("Welcome to TutorialsTonight!");
+  <\/script>
+</body>
+</html>`;
+    setupEditor();
+    run();
+    setTitleOfDocument(code, 'title');
+    return;
+  }
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      code = this.responseText;
+      setupEditor();
+      run();
+      setTitleOfDocument(code, 'title');
+    }
+  };
+  if (p === "html") {
+    xhttp.open("GET", "lib/examples/html-example-code.php/?q=" + q, true);
+  }
+  else if (p === "css") {
+    xhttp.open("GET", "lib/examples/css-example-code.php/?q=" + q, true);
+  }
+  else if (p === "js") {
+    xhttp.open("GET", "lib/examples/js-example-code.php/?q=" + q, true);
+  }
+  else if (p === "bootstrap") {
+    xhttp.open("GET", "lib/examples/bootstrap-example-code.php/?q=" + q, true);
+  }
+  else if (p === "article") {
+    xhttp.open("GET", "lib/examples/article.php/?q=" + q, true);
+  }
+  xhttp.send();
+}
+var editor;
+function setTitleOfDocument(code, title) {
+  let first = code.split(title, 1).join(title).length + 6;
+  let second = code.split(title, 2).join(title).length - 2;
+  let docTitle = code.substring(first, second);
+  document.title = docTitle;
+}
+function run() {
+  let second = document.getElementById("second");
+  second.firstElementChild.remove();
+  let iframe = document.createElement('iframe');
+  iframe.id = "output";
+  iframe.classList.add("output");
+  second.appendChild(iframe);
+  let output = document.getElementById('output').contentWindow.document;
+  output.open();
+  output.write(code);
+  output.close();
+}
+
+function changeTheme() {
+  theme = theme === "cobalt" ? "default" : "cobalt";
+  editor.setOption("theme", theme);
+}
+var theme = "default", lineNumber = true;
+function setupEditor() {
+  var parent = document.getElementById("editor");
+  editor = CodeMirror(parent, {
+    lineNumbers: lineNumber,
+    value: code,
+    mode: "htmlmixed",
+    theme: theme,
+    lineWrapping: false,
+    autoCloseTags: true
+  });
+  editor.on('change', editor => {
+    code = editor.getValue();
+  });
+}
+function dragElement(element, direction) {
+  const first = document.getElementById("first");
+  const second = document.getElementById("second");
+
+  element.onmousedown = onMouseDown;
+  var resolution = document.getElementById('resolution');
+  function onMouseDown(e) {
+    document.getElementById("shield").style.display = "block";
+    md = {
+      e,
+      offsetLeft: element.offsetLeft,
+      offsetTop: element.offsetTop,
+      firstWidth: first.offsetWidth,
+      secondWidth: second.offsetWidth
+    };
+    document.onmousemove = onMouseMove;
+    document.onmouseup = () => {
+      document.getElementById("shield").style.display = "none";
+      //console.log("mouse up");
+      document.onmousemove = document.onmouseup = null;
+    };
+  }
+
+  function onMouseMove(e) {
+    var delta = {
+      x: e.clientX - md.e.clientX,
+      y: e.clientY - md.e.clientY
+    };
+
+    if (direction === "H") // Horizontal
+    {
+      // prevent negative-sized elements
+      delta.x = Math.min(Math.max(delta.x, -md.firstWidth),
+        md.secondWidth);
+
+      element.style.left = md.offsetLeft + delta.x + "px";
+      first.style.width = (md.firstWidth + delta.x) + "px";
+      second.style.width = (md.secondWidth - delta.x) + "px";
+      resolution.innerHTML = `Resolution: ${second.scrollWidth} &times; ${second.scrollHeight}`;
+    }
+  }
+}
+function copyToClipboard(e) {
+  if (window.clipboardData && window.clipboardData.setData) {
+    return clipboardData.setData("Text", code);
+  }
+  else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+    var textarea = document.createElement("textarea");
+    textarea.textContent = code;
+    textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in Microsoft Edge.
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      e.classList.remove('fa-copy');
+      e.classList.add('fa-check');
+      e.style.backgroundColor = "#4fae33";
+      e.style.color = "#fff";
+      setTimeout(
+        () => {
+          e.classList.remove('fa-check');
+          e.classList.add('fa-copy');
+          e.style.backgroundColor = "#fff";
+          e.style.color = "#8f8f8f";
+        }
+        , 1500);
+      return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+    }
+    catch (ex) {
+      console.warn("Copy to clipboard failed.", ex);
+      return false;
+    }
+    finally {
+      document.body.removeChild(textarea);
+    }
+  }
+}
+dragElement(document.getElementById("separator"), "H");
+document.getElementById('resolution').innerHTML = "Resolution: " + document.getElementById('output').scrollWidth + " &times; " + document.getElementById('output').scrollHeight;
+</script>
+  <script async="" src="./square pattern - javascript_files/js"></script>
+  <script>if("localhost"!==window.location.hostname){function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-152703409-1")}</script>
+
+
+</body></html>

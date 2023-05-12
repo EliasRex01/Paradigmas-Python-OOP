@@ -1,0 +1,229 @@
+{
+    "trendProducts": [
+        {
+            "image": "images/items/men/img_2.webp",
+            "title": "Adidas track jacket",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 170
+        },
+        {
+            "image": "images/items/men/img_3.webp",
+            "title": "Polo shirt in piqué",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 85
+        },
+        {
+            "image": "images/items/women/img_2.webp",
+            "title": "Nike Heritage Waist",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 70
+        },
+        {
+            "image": "images/items/women/img_3.webp",
+            "title": "Nike Dry Fit Vest",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 95
+        },
+        {
+            "image": "images/items/kids/img_2.webp",
+            "title": "Eatens Boys Baby",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 10
+        }
+    ],
+    "menImg": [
+        {
+            "image": "images/items/men/img_1.webp",
+            "title": "Real Madrid Icon Pants",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 399
+        },
+        {
+            "image": "images/items/men/img_2.webp",
+            "title": "Adidas track jacket",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 170
+        },
+        {
+            "image": "images/items/men/img_3.webp",
+            "title": "Polo shirt in piqué adidas",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 85
+        },
+        {
+            "image": "images/items/men/img_4.webp",
+            "title": "adidas adilette sandals",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 100
+        },
+        {
+            "image": "images/items/men/img_5.webp",
+            "title": "adidas swim shorts",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 70
+        },
+        {
+            "image": "images/items/men/img_6.webp",
+            "title": "adidas beanie hat Black",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 39
+        }
+    ],
+    "womenImg": [
+        {
+            "image": "images/items/women/img_1.webp",
+            "title": "Element neck shirt",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 120
+        },
+        {
+            "image": "images/items/women/img_2.webp",
+            "title": "Nike Heritage Waist",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 70
+        },
+        {
+            "image": "images/items/women/img_3.webp",
+            "title": "Nike Dry Fit Vest jogging pink",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 95
+        },
+        {
+            "image": "images/items/women/img_4.webp",
+            "title": "Nike short sleeve T-shirt",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 103
+        },
+        {
+            "image": "images/items/women/img_5.webp",
+            "title": "Nike luxury blouse",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 400
+        },
+        {
+            "image": "images/items/women/img_6.webp",
+            "title": "Nike dress without Sleeves ",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 200
+        }
+    ],
+    "kindImg": [
+        {
+            "image": "images/items/kids/img_1.webp",
+            "title": "Kids Animal Print",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 29
+        },
+        {
+            "image": "images/items/kids/img_2.webp",
+            "title": "Eatens Boys",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 10
+        },
+        {
+            "image": "images/items/kids/img_3.webp",
+            "title": "The Children's Place",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 19
+        },
+        {
+            "image": "images/items/kids/img_4.webp",
+            "title": "Baby/Toddler Pink",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 39
+        },
+        {
+            "image": "images/items/kids/img_5.webp",
+            "title": "Baby Jo Baby Girls",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maxime? Doloremque",
+            "price": 59
+        }
+    ],
+    "brandImg": [
+        {
+            "image": "images/brands/img_1.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_2.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_3.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_4.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_5.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_6.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_7.png",
+            "url": "www.google.com"
+        },
+        {
+            "image": "images/brands/img_8.png",
+            "url": "www.google.com"
+        }
+    ],
+    "offierImg": [
+        "images/offier/OffierImg_1.jpg",
+        "images/offier/OffierImg_2.jpg",
+        "images/offier/OffierImg_3.jpg",
+        "images/offier/OffierImg_4.jpg",
+        "images/offier/OffierImg_5.jpg"
+    ],
+    "secionImg": [
+        {
+            "title": "Books",
+            "image": "images/sections/booksSection.jpeg" 
+        },
+        {
+            "title": "Boots",
+            "image": "images/sections/bootsSection.jpeg" 
+        },
+        {
+            "title": "Camera",
+            "image": "images/sections/cameraSections.jpeg" 
+        },
+        {
+            "title": "Clocks",
+            "image": "images/sections/clocksSection.jpg"
+        },
+        {
+            "title": "Devices",
+            "image": "images/sections/devicesSection.jpeg"
+        },
+        {
+            "title": "Fashion",
+            "image": "images/sections/fashionSection.jpeg"
+        },
+        {
+            "title": "Kitchen",
+            "image": "images/sections/kitchen.webp"
+        },
+        {
+            "title": "Laptops",
+            "image": "images/sections/laptopsSection.jpg"
+        },
+        {
+            "title": "Mobile",
+            "image": "images/sections/mobilesSection.jpeg"
+        },
+        {
+            "title": "Perfumes",
+            "image": "images/sections/perfumes.webp"
+        },
+        {
+            "title": "Sport",
+            "image": "images/sections/SportSection.jpg"
+        }
+    ] 
+}

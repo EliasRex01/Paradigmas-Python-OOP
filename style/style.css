@@ -1,0 +1,320 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* body {
+    background-color: rgb(217, 225, 233);
+} */
+a {
+    text-decoration: none;
+    color: black;
+}
+:root{
+    --f-one: 0.9rem;
+    --f-two: 1.5rem;
+    --f-three: 2.5rem;
+}
+:root{
+    --ft-one: 1rem;
+    --ft-two: 1.5rem;
+}
+
+.cart {
+    background-color: rgb(26, 91, 171);
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+
+/*  ***************** Conetnt Style ***********************  */
+.content {
+    margin: 0px 30px;
+}
+.f-SectionContent ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+ 
+.f-SectionContent ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+.f-SectionContent img {
+    border-radius: 50%;
+}
+.f-SectionContent span {
+    font-size: var(--f-one);
+}
+
+/* cataloge */
+.cataloge {
+    background: rgb(247, 247, 250);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--f-two);
+}
+
+/* Section Style */
+.items {
+    display: flex;
+    flex-direction: column;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.sectionTitle {
+    font-size: var(--f-three);
+    font-style: oblique;
+    color: #0d6efd;
+}
+#trendingSection .sectionTitle {
+    text-align: center;
+}
+.row {
+    justify-content: center;
+}
+.fs-base {
+    color: black;
+}
+
+.card {
+    /* border: none; */
+    transition: .5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+
+/* Footer style */
+.footer {
+    height: inherit;
+    background: rgb(247, 247, 250);
+    display: flex;
+    flex-direction: column;
+}
+.helpInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.helpInfo .infoSoial {
+    align-items: flex-end;
+}
+tr {
+    border: 1px solid black;
+}
+.departs {
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.departs ul {
+    list-style-type: disclosure-closed;;
+}
+.departs ul li {
+    font-size: var(--f-one);
+    color: rgb(154, 154, 159);
+}
+
+
+
+
+
+
+
+
+
+/* *********************************** Sign Up Style ************************ */
+.singUpInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+
+
+
+
+/* *********************************** Sign Up Style ************************ */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+/* *********************************** Product Page Style ************************ */
+.productPage {
+    /* background-color: rgb(184, 184, 247); */
+    display: flex;
+    flex-direction: row;
+}
+.productInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+/* *********************************** Cart Page Style ************************ */
+.contentProducts, .forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px;
+}
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.product img {
+    width: 10%;
+}
+
+/* ************************ Media Query ************************ */
+@media screen and (max-width: 1024px) {
+    .f-SectionContent ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .cataloge {
+        font-size: var(--ft-one);
+    }
+    .sectionTitle {
+        font-size: var(--ft-two);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .f-SectionContent ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .helpInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .departs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 450px) {
+    .f-SectionContent ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navImg {
+        width: 200px;
+    }
+    .helpInfo {
+        display: none;
+    }
+    .departs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
