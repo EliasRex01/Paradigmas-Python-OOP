@@ -44,7 +44,6 @@ class Empleado(ABC):
         nombre   : string
         apellido : string
         ...
-      
         self.__nombre = nombre
         self.__apellido = apellido
         self.__sueldo = 0
