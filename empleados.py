@@ -38,7 +38,7 @@ class Empleado(ABC):
         ...
         Metodo constructor.
           
-        nombre : string
+        nombre   : string
         apellido : string
         ...
       
