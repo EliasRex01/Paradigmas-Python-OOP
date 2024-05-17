@@ -34,6 +34,14 @@ class Empleado(ABC):
     cantidad = 0 # Total de empleados
 
     def __init__(self, nombre, apellido):
+      #doc_string es la de abajo
+        ...
+        Metodo constructor.
+          
+        nombre : string
+        apellido : string
+        ...
+      
         self.__nombre = nombre
         self.__apellido = apellido
         self.__sueldo = 0
