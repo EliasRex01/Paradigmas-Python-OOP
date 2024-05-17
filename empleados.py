@@ -30,7 +30,10 @@ from abc import ABC, abstractmethod # ABC: Abstract Base Classes
 #-------------------------------------------------------------------------------
 
 class Empleado(ABC):
-
+    ...
+    Hola
+    ...
+  
     cantidad = 0 # Total de empleados
 
     def __init__(self, nombre, apellido):
