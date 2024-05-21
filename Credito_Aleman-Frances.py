@@ -7,15 +7,15 @@ from abc import ABC, abstractmethod
 
 class Credito(ABC):
     """
-    Clase abstracta que define la estructura base de un crédito.
+    Clase abstracta que define la estructura base de un credito.
     """
     def __init__(self, monto, tasa_anual, plazo_meses):
         """
-        Constructor base para inicializar los atributos comunes de un crédito.
+        Constructor base para inicializar los atributos comunes de un credito.
         
-        :param monto: Monto del préstamo.
-        :param tasa_anual: Tasa de interés anual.
-        :param plazo_meses: Plazo del crédito en meses.
+        :param monto: Monto del prestamo.
+        :param tasa_anual: Tasa de interes anual.
+        :param plazo_meses: Plazo del credito en meses.
         """
         self.monto = monto
         self.tasa_mensual = tasa_anual / 12
@@ -24,8 +24,8 @@ class Credito(ABC):
     @abstractmethod
     def amortizacion(self):
         """
-        Método abstracto que debe ser implementado por las clases derivadas
-        para calcular la amortización.
+        Metodo abstracto que debe ser implementado por las clases derivadas
+        para calcular la amortizacion
         """
         pass
 
@@ -37,9 +37,9 @@ class Credito(ABC):
 class CreditoFrances(Credito):
     def amortizacion(self) -> float:
         """
-        Calcula la cuota fija mensual de acuerdo al sistema francés de amortización.
+        Calcula la cuota fija mensual de acuerdo al sistema frances de amortizacion
 
-        :return: Cuota mensual fija.
+        :return: Cuota mensual fija
         """
         P = self.monto
         T = self.tasa_mensual
@@ -52,9 +52,9 @@ class CreditoFrances(Credito):
 class CreditoAleman(Credito):
     def amortizacion(self) -> list:
         """
-        Calcula las cuotas mensuales de acuerdo al sistema alemán de amortización.
+        Calcula las cuotas mensuales de acuerdo al sistema aleman de amortizacion
 
-        :return: Lista de cuotas mensuales decrecientes.
+        :return: Lista de cuotas mensuales decrecientes
         """
         P = self.monto
         T = self.tasa_mensual
@@ -67,8 +67,8 @@ class CreditoAleman(Credito):
 
 def main():
     """
-    Función principal que ejecuta los cálculos de amortización para diferentes
-    tipos de créditos y muestra los resultados.
+    Funcion principal que ejecuta los calculos de amortizacion para diferentes
+    tipos de creditos y muestra los resultados.
     """
     creditos = []
 
@@ -77,7 +77,7 @@ def main():
 
     for credito in creditos:
         print(credito)
-        print("Amortización:", credito.amortizacion())
+        print("Amortizacion:", credito.amortizacion())
         print()
 
 #-------------------------------------------------------------------------------
