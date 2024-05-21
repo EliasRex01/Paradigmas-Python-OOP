@@ -7,15 +7,15 @@ from abc import ABC, abstractmethod
 
 class Credito(ABC):
     """
-    Clase abstracta que define la estructura base de un credito.
+    Clase abstracta que define la estructura base de un credito
     """
     def __init__(self, monto, tasa_anual, plazo_meses):
         """
-        Constructor base para inicializar los atributos comunes de un credito.
+        Constructor base para inicializar los atributos comunes de un credito
         
-        :param monto: Monto del prestamo.
-        :param tasa_anual: Tasa de interes anual.
-        :param plazo_meses: Plazo del credito en meses.
+        :param monto: Monto del prestamo
+        :param tasa_anual: Tasa de interes anual
+        :param plazo_meses: Plazo del credito en meses
         """
         self.monto = monto
         self.tasa_mensual = tasa_anual / 12
@@ -68,7 +68,7 @@ class CreditoAleman(Credito):
 def main():
     """
     Funcion principal que ejecuta los calculos de amortizacion para diferentes
-    tipos de creditos y muestra los resultados.
+    tipos de creditos y muestra los resultados
     """
     creditos = []
 
