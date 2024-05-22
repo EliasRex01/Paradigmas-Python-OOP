@@ -11,7 +11,7 @@ class Credito(ABC):
     """
     def __init__(self, monto, tasa_anual, plazo_meses):
         """
-        Constructor base para inicializar los atributos comunes de un credito
+        Constructor base para inicializar los atributos de un credito
         
         :param monto: Monto del prestamo
         :param tasa_anual: Tasa de interes anual
