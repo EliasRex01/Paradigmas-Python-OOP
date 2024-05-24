@@ -1,0 +1,36 @@
+Cómo mejorar el modo interactivo de Python:
+
+Un archivo .pythonrc es un programa en Python que está pensado para ejecutarse
+automáticamente cada vez que arranquemos el modo interactivo de Python.
+
+El .pythonrc que acompaña a este archivo permite mejorar la experiencia con la
+línea de comandos de Python, es decir, el modo interactivo del lenguaje.
+
+Para lograr que .pythonrc se ejecute automáticamente cada vez que ingresemos al
+modo interactivo (prompt) de Python, hay que hacer lo siguiente:
+
+1. Copiar el archivo .pythonrc a la carpeta "home" del usuario activo.
+
+2. Abrir el archivo .bashrc en un editor de textos y agregar al final:
+
+   export PYTHONSTARTUP="$HOME/.pythonrc"
+
+Las mejoras estarán disponibles la próxima vez que se arranque el intérprete de
+línea de comandos (bash) y se ejecute el comando para ingresar a Python.
+
+Observaciones:
+
+El archivo .bashrc debería estar oculto en la carpeta "home" del usuario activo.
+Para saber cuál es la carpeta "home", sólo hay que abrir un intérprete de línea
+de comandos (bash) y ejecutar:
+
+   echo $HOME
+
+En los sistemas operativos basados en UNIX (Linux, macOS...) los nombres de
+archivo que empiezan con un punto están ocultos. Pueden visualizarse desde la
+línea de comandos con:
+
+   ls -a
+
+O desde la interfaz gráfica, activando alguna opción de configuración, que
+varía dependiendo del ambiente de escritorio que se esté usando.
