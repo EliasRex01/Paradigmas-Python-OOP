@@ -1,5 +1,5 @@
 #
-Paradigmas, tp
-
+Python projects with
+Object oriented programming
 
 #
