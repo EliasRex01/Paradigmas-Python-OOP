@@ -141,6 +141,21 @@ class Consulta:
                 print(Back.WHITE + Fore.BLACK + f"--- CI: | DEM: {data['dem1']} {data['ci1']} | MONTO: {data['monto']}")
                 self.proceso_judicial.ejecutar_proceso(juicio, data)
             else:
-                print(f"⚠️ Error.... {response
+                print(f"⚠️ Error.... {response.status_code}")
+        except requests.RequestException as e:
+            print(f"Error al realizar la solicitud: {e}")
 
-                                     
+# Función principal
+def main():
+    consulta = Consulta()
+    while True:
+        juicio = input("Ingrese el número de juicio (o 'salir' para terminar): ")
+        if juicio.lower() == 'salir':
+            break
+        if juicio.isdigit():
+            consulta.ejecutar(juicio)
+        else:
+            print("Por favor, ingrese un número de juicio válido.")
+
+if __name__ == "__main__":
+    main()
