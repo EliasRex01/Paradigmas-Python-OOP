@@ -1,0 +1,53 @@
+% Script simple para demostrar el uso de reglas
+
+% productos (código, nombre, precio, stock)
+producto(1, 'Camisa', 50000, 20).
+producto(2, 'Pantalon', 80000, 25).
+producto(3, 'Vestido', 120000, 25).
+
+% Agregar un producto al inventario
+agregar_producto(Nombre, Precio,Stock) :-
+    inventario(Codigo, Nombre, Precio, Stock).
+
+% Para la devolución de productos (código, cantidad)
+realizar_devolucion_loop :-
+    read(ProductoCodigo),
+    (   ProductoCodigo = 0
+    ->  true  % ¡Devolución completada!
+    ;   devolver_producto_loop(ProductoCodigo)
+    ).
+
+
+% Predicado para generar un comprobante (tipo, nombre, dirección, teléfono, RUC)
+generar_comprobante(TipoComprobante, NombreCliente, DireccionCliente, TelefonoCliente, RUCCliente) :-
+    write("Productos a vender:"), nl,
+    vender_productos(ProductosVendidos),
+    % Lógica para generar el comprobante (factura o recibo)...
+    write("¡Venta completada!\n").
+
+% calcular el IVA si es factura
+calcular_iva(Subtotal, IVA) :-
+    IVA is Subtotal * 0.10.
+
+
+% Para para imprimir el inventario
+imprimir_inventario([]).
+imprimir_inventario([(Codigo, Nombre, Precio, Stock)|Resto]) :-
+    write('Código: '), write(Codigo),
+    write(', Nombre: '), write(Nombre),
+    write(', Precio: '), write(Precio), write(' Gs'),
+    write(', Stock: '), write(Stock), nl,
+    imprimir_inventario(Resto).
+
+
+
+
+
+
+
+
+Predicado para mostrar detalles de la factura
+mostrar_factura(Subtotal, IVA, Total) :-
+    write("Subtotal: Gs. "), write(Subtotal), nl,
+    write("IVA (10%): Gs. "), write(IVA), nl,
+    write("Total a pagar: Gs. "), write(Total), nl.
